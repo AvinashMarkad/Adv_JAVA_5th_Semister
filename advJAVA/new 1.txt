@@ -1,0 +1,26 @@
+import java.awt.*; 
+import javax.swing.*; 
+/* 
+<applet code="JScrollPaneDemo" width=300 height=250> 
+</applet> 
+*/ 
+public class JScroll PaneDemo extends JApplet 
+{ 
+  public void init() 
+  {  
+   setlayout(new Bor derlayout()); 
+   JPanel jp = new )Panel(); 
+   jp .setlayout(new Gridlayout(10, 10)); 
+   int b = 0; 
+   for (int i = 0; i < 10; i++) 
+   { 
+     for (int j = 0; j < 10; j++) 
+	  { 
+       jp.add(new JButton("Button " + b)); 
+       ++b; 
+	   }
+	   }
+       int v = ScrollPaneConst ants.VERTICAL_SCROLLBAR_AS_NEEDED; 
+       int h = ScrollPaneConstants.HORIZONTAL_SCRDLLBAR_AS_NEEDED; 
+       JScrollPane jsp = new JScrollPane(jp, v, h); 
+       add(jsp, Borderlayout.CENTER); 

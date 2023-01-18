@@ -1,0 +1,59 @@
+import java.awt.*;
+
+public class Prac_no_5 extends Frame
+{
+  public Prac_no_5()
+  {
+   MenuBar mb=new MenuBar();
+   
+   Menu m1=new Menu("File");
+   Menu m2=new Menu("Edit");
+   Menu m3=new Menu("View");
+   
+   MenuItem mi1=new MenuItem("New");
+   MenuItem mi2=new MenuItem("Open");
+   MenuItem mi3=new MenuItem("Save");
+   MenuItem mi4=new MenuItem("Save As");
+   MenuItem mi5=new MenuItem("Save All");
+   MenuItem mi6=new MenuItem("Close");
+   
+   MenuItem mi7=new MenuItem("Cut");
+   MenuItem mi8=new MenuItem("Copy");
+   MenuItem mi9=new MenuItem("Paste");
+   MenuItem mi10=new MenuItem("Select All");
+   
+   MenuItem mi11=new MenuItem("Tab");
+   MenuItem mi12=new MenuItem("Zoom");
+   
+   CheckboxMenuItem ch1=new CheckboxMenuItem("Word Wrap",true);
+   
+   mb.add(m1);
+   mb.add(m2);
+   mb.add(m3);
+   
+   m1.add(mi1);
+   m1.add(mi2);
+   m1.add(mi3);
+   m1.add(mi4);
+   m1.add(mi5);
+   m1.add(mi6);
+   
+   m2.add(mi7);
+   m2.add(mi8);
+   m2.add(mi9);
+   m2.add(mi10);
+   
+   m3.add(mi11);
+   m3.add(mi12);
+   m3.add(ch1);
+   
+   setMenuBar(mb);
+  }
+  public static void main(String args[])
+  {
+   Prac_no_5 p=new Prac_no_5();
+             p.setTitle("MenuBar");
+			 p.setSize(500,600);
+			 p.setVisible(true);
+  }
+} 
